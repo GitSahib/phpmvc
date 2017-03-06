@@ -1,0 +1,214 @@
+Open Issue TQI-27
+ 
+ [TQI-27] Ticket #93443  TQI Expansion : Display Ticketing System on Rules Table screens
+
+ (PCR-1) [TQI-27] Ticket #93443  - TQI Expansion : Display Ticketing System on Rules Table screens
+
+sk213d-93443-display-ticketing-system-on-rules-tables
+##################################################################################################
+Open Issue UD-3247
+ 
+ [UD-3247] Ticket #95571 IE tickets with no Owning Team provide no "New ..." engagement button (AOTS)
+
+ (PCR-1) [UD-3247] Ticket #95571 - IE tickets with no Owning Team provide no "New ..." engagement button (AOTS)
+
+sk213d-95571-ie-no-owning-team-new-button-issue
+##################################################################################################Open Issue WAM-710
+ 
+ [WAM-710] Ticket #95303 Add "Use Profiles" checkbox to Debug Rules dialog
+
+ (PCR-1) [WAM-710] Ticket #95303 - Add "Use Profiles" checkbox to Debug Rules dialog
+
+sk213d-95303-add-useprofile-checkbox-to-debugrule
+####################################################################################################  000000228430550
+Open Issue UD-69
+ 
+ [UD-69] Ticket #64694 Magellan - error trapping broken in UWTRD
+
+ (PCR-1) [UD-69] Ticket #64694 - Magellan - error trapping broken in UWTRD
+
+sk213d-64694-magellan-error-trapping-broken
+####################################################################################################
+Open Issue UD-3094
+ 
+ [UD-3094] Ticket #94386 UD ticket search not working 100%
+
+ (PCR-1) [UD-3094] Ticket #94386 - UD ticket search not working 100%
+
+sk213d-94386-ud-ticket-search-not-working
+####################################################################################################
+Open Issue UD-3187
+ 
+ [UD-3187] Ticket #95171 Unable to create/edit create template in UD admin without setting severity
+
+ (PCR-1) [UD-3187] Ticket #95171 - Unable to create/edit create template in UD admin without setting severity
+
+sk213d-severity-bug-in-create-template-ud
+####################################################################################################
+Open Issue TEAMDB-207
+ 
+ [TEAMDB-207] Ticket #95015 TeamDB API - Shifts and skills
+
+ (PCR-1) [TEAMDB-207] Ticket #95015 - TeamDB API - Shifts and skills
+
+sk213d-95015-teamdb-api-shifts-and-skills
+####################################################################################################
+Open Issue UD-3019
+ 
+ [UD-3019] Ticket #93859 Magellan - Add New BMP Deferral Form Needs Minor UI Fixes
+
+ (PCR-1) [UD-3019] Ticket #93859 - Magellan - Add New BMP Deferral Form Needs Minor UI Fixes
+
+sk213d-93859-bmp-deferral-form-ui-updates
+####################################################################################################
+Open Issue AQE-212
+ 
+ [AQE-212] Ticket #93962 BMP inequalities for AQE - Soap patterns & GUI
+
+ (PCR-2) [AQE-212] Ticket #93962 - BMP inequalities for AQE - Soap patterns & GUI
+
+sk213d-93962-bmp-inequalities-aqe
+####################################################################################################
+Open Issue UD-3023
+ 
+ [UD-3023] Ticket #93873 Increase Responsiveness of the Left Side Bar
+
+ (PCR-1) [UD-3023] Ticket #93873 - Increase Responsiveness of the Left Side Bar
+
+sk213d-93873-increase-responsiveness-left-sidebar
+#################################################################################################### 
+Open Issue WAM-671
+ 
+ [WAM-671] Ticket #93646 WAM - Export list to excel - Debug
+
+ (PCR-2) [WAM-671] Ticket #93646 - WAM - Export list to excel - Debug
+
+sk213d-93646-wam-export-list-to-excel-debug
+####################################################################################################  
+Open Issue UD-608
+ 
+ [UD-608] Ticket #75884 AOTS Category change
+
+ (PCR-1) [UD-608] Ticket #75884 - AOTS Category change
+
+sk213d-75884-aots-category-change
+####################################################################################################  
+  Open Issue UD-2961
+ 
+ [UD-2961] Ticket #93607 UD Touch Metrics - Ticket Create
+
+ (PCR-1) [UD-2961] Ticket #93607 - UD Touch Metrics - Ticket Create
+
+sk213d-93607-ud-touch-metrics-ticket-create
+####################################################################################################
+
+ Open Issue UD-2959
+ 
+ [UD-2959] Ticket #93604 UD Touch Metrics - UV Misc
+
+ (PCR-1) [UD-2959] Ticket #93604 - UD Touch Metrics - UV Misc 
+
+sk213d-93604-ud-touch-metrics-uv-miscs
+####################################################################################################
+
+ Open Issue UD-2922
+ 
+ [UD-2922] Ticket #93435 UD Touch Metrics - WFA Deferral
+
+ (PCR-1) [UD-2922] Ticket #93435 - UD Touch Metrics - WFA Deferral
+
+sk213d-93435-ud-touch-metrics-wfa-deferral
+####################################################################################################
+ Open Issue UD-2919
+ 
+ [UD-2919] Ticket #93431 UD Touch Metrics - Ticket State Change (AOTS/BMP)
+
+ (PCR-1) [UD-2919] Ticket #93431 - UD Touch Metrics - Ticket State Change (AOTS/BMP)
+
+sk213d-93431-ud-touch-metrics-state-change
+####################################################################################################
+
+
+  Open Issue UD-2944
+ 
+ [UD-2944] Ticket #93534 UD is clearing the work queue on IEs to GT3 after AQM has assigned them
+
+ (PCR-1) [UD-2944] Ticket #93534 - UD is clearing the work queue on IEs to GT3 after AQM has assigned them
+
+sk213d-93534-not-to-clear-workingq-for-gt3
+####################################################################################################
+  Open Issue UD-2879
+ 
+ [UD-2879] Ticket #93000 New Config Details icon is not positioned correctly when in Read Only in UD
+
+ (PCR-1) [UD-2879] Ticket #93000 - New Config Details icon is not positioned correctly when in Read Only in UD
+
+sk213d-93000position-correctly-config-icon
+####################################################################################################
+
+  Open Issue UD-594
+ 
+ [UD-594] Ticket #75298 Change type of service code field to drop down
+
+ (PCR-1) [UD-594] Ticket #75298 - Change type of service code field to drop down
+
+
+sk213d-75298-changing-tos-code
+####################################################################################################
+
+  Open Issue UD-2818
+ 
+ [UD-2818] Ticket #92679 Remove DBI Functions From WAM Module
+
+ (PCR-1) [UD-2818] Ticket #92679 - Remove DBI Functions From WAM Module
+
+sk213d-92679-remove-dbi-from-wam-module
+####################################################################################################
+  Open Issue UD-2817
+ 
+ [UD-2817] Ticket #92678 TaskMaster Module Should Be Migrated to M5::DB
+
+ (PCR-1) [UD-2817] Ticket #92678 - TaskMaster Module Should Be Migrated to M5::DB
+
+sk213d-92678-migrate-taskmaster-to-m5db
+####################################################################################################
+ Open Issue UD-1489
+ 
+ [UD-1489] Ticket #83455 INSTAR section of the UD is not able to pull the circuit data for MLPP MIS/BVOIP Circuits
+
+ (PCR-1) [UD-1489] Ticket #83455 - INSTAR section of the UD is not able to pull the circuit data for MLPP MIS/BVOIP Circuits
+
+sk213d-83455-pull-instar-section-of-circuit-data
+########################################################################################
+ Open Issue AQE-192
+ 
+ [AQE-192] Ticket #92526 Support use_prod in M5::AQE for taskmaster queries
+
+ (PCR-1) [AQE-192] Ticket #92526 - Support use_prod in M5::AQE for taskmaster queries
+
+sk213d-92526-support-use_prod-in-M5AQE-taskmasterdb
+########################################################################################
+ Open Issue UD-2790
+ 
+ [UD-2790] Ticket #92508 Update Error Pages
+
+ (PCR-1) [UD-2790] Ticket #92508 - Update Error Pages
+
+sk213d-92508-update-error-pages
+########################################################################################
+ Open Issue UD-2847
+ 
+ [UD-2847] Ticket #92866 Snarl a message when a BMP ticket can't be opened due to ticket archival
+
+ (PCR-1) [UD-2847] Ticket #92866 - Snarl a message when a BMP ticket can't be opened due to ticket archival
+
+sk213d-92866-snarl-message-on-bmpticket-error
+########################################################################################
+Open Issue UD-2692
+ 
+ [UD-2692] Ticket #91943 Update external dependencies
+
+ (PCR-1) [UD-2692] Ticket #91943 - Update external dependencies
+
+sk213d-91943-update-external-dependencies
+

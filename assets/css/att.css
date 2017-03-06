@@ -1,0 +1,27 @@
+.navbar-nav > li > a{
+	height:70px;
+	padding-top:25px;
+	padding-bottom:15px;
+
+}
+.submit,.bulk_upload{margin-top:24px;}
+table.dataTable tr.odd { background-color: #E2E4FF; }
+.navbar{height: 70px;margin-bottom: 3px;}
+.home{
+	background-image: url(../images/devhome.png);
+	height: calc(100vh - 70px);;
+	height: -moz-calc(100vh - 73px);
+	background-repeat: repeat-x;
+	background-size: cover;
+	border-bottom: 3px solid white;
+}
+.dialog{
+	position:absolute;
+	top:0px;
+	z-index:1000;
+	margin-left: 35%;
+	margin-top:10px;
+	min-width: 300px;
+	min-height: 150px;
+}
+.panel-footer button{margin-top:20px;}

@@ -1,0 +1,23 @@
+<div class="panel panel-{{type}}">
+	<div class="panel-heading">
+		<h1 class="panel-title">{{title}}</h1>
+	</div>
+	<div class="panel-body">
+		<table class="stripe table" id="{{tableId}}">
+			<thead>
+				{{#each headers}}
+		 			<th>{{value}}</th>
+		 		{{/each}}
+			</thead>		
+			<tbody>
+			{{#each options}}
+			 <tr id='{{dialogCode}}#_row_{{row_id}}'>
+			 	{{#each cells}}
+			 		<td>{{value}}</td>
+			 	{{/each}}
+			 </tr>
+			{{/each}}
+			</tbody>
+		</table>
+	</div>
+</div>
