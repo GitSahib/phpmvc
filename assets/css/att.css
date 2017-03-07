@@ -6,7 +6,7 @@
 }
 .submit,.bulk_upload{margin-top:24px;}
 table.dataTable tr.odd { background-color: #E2E4FF; }
-.navbar{height: 70px;margin-bottom: 3px;}
+.navbar{height: 72px;margin-bottom: 1px;}
 .home{
 	background-image: url(../images/devhome.png);
 	height: calc(100vh - 70px);;
