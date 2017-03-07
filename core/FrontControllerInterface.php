@@ -14,9 +14,11 @@ class FrontController implements FrontControllerInterface
     protected $controller    = self::DEFAULT_CONTROLLER;
     protected $action        = self::DEFAULT_ACTION;
     protected $params        = array();
-    protected $basePath      = "home/";
+    protected $basePath      = "";
     
     public function __construct(array $options = array()) {
+        $this->basePath = $this->getCurrentDirectory();
+        define("ROOT_DIR", $this->basePath);
         if (empty($options)) {
            $this->parseUri();
         }
@@ -33,17 +35,32 @@ class FrontController implements FrontControllerInterface
         }
         return $this;
     }
-    
+    protected function getCurrentDirectory() {
+        $path     = dirname(__FILE__);
+        $path_array = explode(DIRECTORY_SEPARATOR, $path);
+        if(count($path_array) > 1){
+            $path = $path_array[count($path_array) -2];    
+        }        
+        return str_replace("index.php","",trim($path,"/"));
+    }
     protected function parseUri() {
         $path = trim(parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH), "/");
         $path = preg_replace('~/[^a-zA-Z0-9]//~', "", $path);
+        
         $home = trim($this->basePath,"/");
-        if (strpos($path, $home) === 0) {
+        
+        if (!empty($home) && strpos($path, $home) > -1) {
             $path = substr($path, strlen($this->basePath));
         }
         
-        @list($controller, $action, $params) = explode("/", $path, 3);
+        if(strpos($path, 'index.php') > -1)
+        {
+            $path = str_replace("index.php", "", $path);
+        }
+        $path = trim($path,"/");
 
+        @list($controller, $action, $params) = explode("/", $path, 3);
+       
         if (!empty($controller)) {
             $this->setController($controller);
         }

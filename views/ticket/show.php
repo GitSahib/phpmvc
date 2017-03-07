@@ -19,7 +19,7 @@
 			</div>
 			
 			<div class="col-md-12 form-group">
-				<a href="<?php echo ROOT_URL;?>/ticket/" class="btn btn-primary">Back to list</a>
+				<a href="<?php echo $this->root_url();?>/ticket/" class="btn btn-primary">Back to list</a>
 			</div>
 		</form>
 	</div>

@@ -11,6 +11,7 @@ class Controller
 	var $data;
 	var $dbContext;	
 	var $layout;
+
 	function __construct($options=array('','',[]))
 	{
 		$this->controller   = strtolower(str_replace("Controller", "",$options[0]));
@@ -18,6 +19,10 @@ class Controller
 		$this->params  		= $options[2];
 		$this->dbContext 	= new DBContext("tickets.db");
 		$this->layout       = 'default_layout';
+	}
+	function root_url(){
+
+		return 'http'.(empty($_SERVER['HTTPS'])?'':'s').'://'.$_SERVER['HTTP_HOST'].'/'.ROOT_DIR;
 	}
 	function load_view($file_name = ""){
 		$this->data['controller'] = $this->controller;
