@@ -28,14 +28,7 @@ $form = isset($this->data['form'])?$this->data['form']:$default_form;
 			<div class="col-md-12 form-group">
 			  <label>Merge Message</label>
 			  <textarea class="form-control" name="merge_message"><?php echo $form['merge_message']?></textarea>
-			</div>
-			<div class="col-md-6">
-				<label>Read from file:</label>
-				<input type="file" class="form-control" name="data-file" id="data-file" />
-			</div>
-			<div class="col-md-2">
-				<span class="bulk_upload btn btn-primary">Bulk Submit</span>
-			</div>
+			</div>			
 			<div class="col-md-2 form-group">
 				<span class="submit btn btn-primary" id="submit_ticket">Save Ticket Info</span>
 			</div>
