@@ -10,6 +10,7 @@ class IndexController extends Controller
 	{
 		parent::__construct(func_get_args());
 		$this->views_dir = "views";
+		$this->layout    = "sidebar_layout";
 	}
 	function index()
 	{

@@ -10,7 +10,7 @@ class TicketController extends Controller
 	{
 		parent::__construct(func_get_args());
 		$this->views_dir = "views";
-		$this->layout = "ticket_layout";
+		$this->layout = "sidebar_layout";
 		$this->ticket_model = new TicketModel($this->dbContext);
 	}
 	function index($id = 0)

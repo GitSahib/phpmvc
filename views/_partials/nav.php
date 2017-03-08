@@ -19,19 +19,15 @@
         </li>
         <li><a href="/UD/cgi-bin/worklist.pl">UD</a></li>
         <li><a href="/upm2">UPM</a></li>
-        <li><a href="/aqe/cgi-bin/index.pl">AQE</a></li>
-        <li><a href="/teamdb">TeamDB</a></li>
-        <li><a href="/shift">TeamDB_API/shifts</a></li>
-        <li><a href="/Templates/cgi-bin/Template.pl">Template Tool</a></li>
-
-        <li><a href="<?php echo $this->root_url();?>/wam">WAM</a></li>
+        <li><a href="/aqe/cgi-bin/index.pl">AQE</a></li>        
+        <li><a href="/wam">WAM</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
         <li><a href="<?php echo $this->root_url();?>/ticket">My Tickets</a></li>
         <li class="dropdown">
 
-          <a href="<?php echo $this->root_url();?>#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Usefull Links <span class="caret"></span></a>
+          <a href="<?php echo $this->root_url();?>#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Profile<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="https://icode3.web.att.com/cru?filter=inbox">ICODE</a></li>
             <li><a href="https://itrack.web.att.com/issues/?filter=49937">ITRACK</a></li>
