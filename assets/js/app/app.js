@@ -52,7 +52,8 @@
 		dom: 'Bfrtip',
 		fnInitComplete:function(){
 			$(".btn-new").appendTo("div.dt-buttons");
-			$("div.dt-buttons").css({float:'left'});
+			$("div.dt-buttons").addClass("pull-left");
+			$("div.dataTables_filter").addClass("pull-right");
 			
 		},
 		buttons: [

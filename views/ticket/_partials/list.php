@@ -10,7 +10,7 @@
 					foreach($row_head as $key => $value){
 						echo "<th>".ucfirst(str_replace("_", " ", $key))."</th>";
 					} 
-					echo "<th width='10%'>Actions</th>";
+					echo "<th width='15%'>Actions</th>";
 					?>
 				</tr>
 			</thead>
