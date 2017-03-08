@@ -10,6 +10,7 @@
 		var $dbContext;
 		function __construct($dbc)
 		{
+			$dbc = is_array($dbc)?$dbc[0]:$dbc;
 			if(empty($this->table_name)){
 				new CException("Model should have a table", CException::THROW_CUSTOM);
 			}

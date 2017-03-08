@@ -15,6 +15,11 @@ class DBContext extends SQLite3
         		 . "merge_message varchar(200),"
         		 . "branch_name varchar(50))";
         $this->exec($query);
+        $query = "CREATE TABLE IF NOT EXISTS Images("
+                 . "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                 . "title varchar(100),"
+                 . "file_name varchar(200))";
+        $this->exec($query);
     }
     function getError(){
     	return $this->lastErrorMsg();

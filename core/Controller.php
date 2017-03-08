@@ -20,9 +20,17 @@ class Controller
 		$this->dbContext 	= new DBContext("tickets.db");
 		$this->layout       = 'default_layout';
 	}
-	function root_url(){
+	function root_url($url=""){
 
-		return 'http'.(empty($_SERVER['HTTPS'])?'':'s').'://'.$_SERVER['HTTP_HOST'].'/'.ROOT_DIR;
+		return 'http'.(empty($_SERVER['HTTPS'])?'':'s').'://'.$_SERVER['HTTP_HOST'].'/'.ROOT_DIR."/".trim($url,"/");
+	}
+	function load_model($modelName){
+		$ref = new ReflectionClass($modelName);
+		$modelInstance = $ref->newInstanceArgs([$this->dbContext]);
+		return $modelInstance;
+	}
+	function redirect($url){
+		header("location: ".$this->root_url('/image'));
 	}
 	function load_view($file_name = ""){
 		$this->data['controller'] = $this->controller;
