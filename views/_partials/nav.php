@@ -24,7 +24,7 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="<?php echo $this->root_url();?>/ticket">My Tickets</a></li>
+        <li><a href="<?php echo $this->root_url();?>ticket">My Tickets</a></li>
         <li class="dropdown">
 
           <a href="<?php echo $this->root_url();?>#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Profile<span class="caret"></span></a>
