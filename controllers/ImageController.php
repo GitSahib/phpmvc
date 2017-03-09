@@ -49,12 +49,15 @@ class ImageController extends Controller
 			unset($_POST['requestType']);
 		}
 		$id = isset($_POST['id'])?$_POST['id']:-1;
+
 		if($id == -1){
 			$upload_result = $this->image_upload
 				 ->dest_path("uploads")
 				 ->file_name("image")
 				 ->process();
-			if($upload_result["STATUS"] === "OK");
+			echo $upload_result['result'];
+			$res = $upload_result['result'];
+			if( $res > 0 );
 			{
 				$_POST['file_name'] = $upload_result['file_name'];
 				unset($_POST['image']);
@@ -64,13 +67,16 @@ class ImageController extends Controller
 				
 		}
 		else{
-				$upload_result = $this->image_upload
+			$upload_result = $this->image_upload
 				 ->dest_path("uploads")
 				 ->file_name("image")
-				 ->process();
-			if($upload_result["STATUS"] === "OK");
+				 ->process();	
+			
+			$res = $upload_result['result'];
+			echo var_dump($res);
+			if( $res > 0 );
 			{
-				print_r($upload_result);
+				
 				$_POST['file_name'] = $upload_result['file_name'];
 				unset($_POST['image']);
 				$this->image_model->update($id,$_POST);

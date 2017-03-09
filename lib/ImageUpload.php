@@ -78,11 +78,11 @@ class ImageUpload
             }
             
 
-            return array('STATUS'=>"OK",'file_name','message'=>sprintf('File%s is uploaded successfully.',is_array($this->file_name)?'s':''));
+            return array('result'=> 1,'file_name','message'=>sprintf('File%s is uploaded successfully.',is_array($this->file_name)?'s':''));
 
         } catch (RuntimeException $e) {
 
-            return array('STATUS'=>'Error','message'=>$e->getMessage());
+            return array('result'=> 0,'message'=>$e->getMessage());
 
         }
     }
