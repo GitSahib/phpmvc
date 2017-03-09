@@ -19,7 +19,7 @@ $form = isset($this->data['form'])?$this->data['form']:$default_form;
 			</div>
 			<div class="col-md-6 form-group">
 			  <label>Image File</label>
-			  <input type="file" multiple class="form-control" name="image_files" />
+			  <input type="file" multiple class="form-control" name="file_name" />
 			</div>			
 			<div class="col-md-2 form-group">
 				<span class="submit btn btn-primary" id="submit_ticket">Save Image</span>

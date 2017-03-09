@@ -1,5 +1,5 @@
 <?php 
-  include "lib/autoload.php";
-  $app = new FrontController();
+  include "autoload.php";
+  $app = new ApplicationController();
   $app->run();
 ?>

@@ -1,6 +1,6 @@
 <div class="panel panel-default">
 	<div class="panel-heading">
-		<h1 class="panel-title">Saved Tickets   <a class="btn-new btn btn-success pull-right" href="<?php echo $this->root_url();?>/image/create">New</a></h1>
+		<h1 class="panel-title">Saved Tickets   <a class="btn-new btn btn-success pull-right" href="<?php echo $this->action_url("create");?>">New</a></h1>
 	</div>
 	<div class="panel-body">
 		<table class="dataTable table striped display">

@@ -1,12 +1,12 @@
 <?php 
-interface FrontControllerInterface
+interface ApplicationControllerInterface
 {
     public function setController($controller);
     public function setAction($action);
     public function setParams(array $params);
     public function run();
 }
-class FrontController implements FrontControllerInterface
+class ApplicationController implements ApplicationControllerInterface
 {
     const DEFAULT_CONTROLLER = "IndexController";
     const DEFAULT_ACTION     = "index";

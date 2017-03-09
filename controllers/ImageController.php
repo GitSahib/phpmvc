@@ -12,6 +12,7 @@ class ImageController extends Controller
 		$this->views_dir   = "views";
 		$this->layout 	   = "sidebar_layout";
 		$this->image_model = $this->load_model("ImageModel");
+		$this->image_upload = $this->load_library("ImageUpload");
 	}
 	function index($id = 0)
 	{
@@ -49,11 +50,32 @@ class ImageController extends Controller
 		}
 		$id = isset($_POST['id'])?$_POST['id']:-1;
 		if($id == -1){
-			$this->image_model->insert($_POST);
+			$upload_result = $this->image_upload
+				 ->dest_path("uploads")
+				 ->file_name("image")
+				 ->process();
+			if($upload_result["STATUS"] === "OK");
+			{
+				$_POST['file_name'] = $upload_result['file_name'];
+				unset($_POST['image']);
+				$this->image_model->insert($_POST);		
+
+			}
+				
 		}
 		else{
-			unset($_POST['id']);
-			$this->image_model->update($id,$_POST);
+				$upload_result = $this->image_upload
+				 ->dest_path("uploads")
+				 ->file_name("image")
+				 ->process();
+			if($upload_result["STATUS"] === "OK");
+			{
+				print_r($upload_result);
+				$_POST['file_name'] = $upload_result['file_name'];
+				unset($_POST['image']);
+				$this->image_model->update($id,$_POST);
+			}
+			
 		}
 		if($requestType == 'ajax'){
 			echo json_encode(array("STATUS"=>'OK'));
@@ -62,6 +84,9 @@ class ImageController extends Controller
 		else{
 			$this->redirect($this->root_url('/image'));
 		}
+	}
+	function produce_error($message=""){
+		echo "Error";
 	}
 	function show($id){
 		$this->data['view_object'] = $this->image_model->get($id);

@@ -32,6 +32,11 @@ class Controller
 		$modelInstance = $ref->newInstanceArgs([$this->dbContext]);
 		return $modelInstance;
 	}
+	function load_library($libName,$args=array()){
+		$ref = new ReflectionClass($libName);
+		$libInstance = $ref->newInstanceArgs($args);
+		return $libInstance;
+	}
 	function redirect($url){
 		header("location: ".$this->root_url('/image'));
 	}

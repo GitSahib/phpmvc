@@ -1,5 +1,5 @@
 <?php 
-$directories = ['config','core','controllers','models'];
+$directories = ['config','core','controllers','models','lib'];
 foreach ($directories as $key => $value) {
 	if(is_dir($value)){
 		foreach (scandir($value) as $file) {
