@@ -24,6 +24,9 @@ class Controller
 
 		return 'http'.(empty($_SERVER['HTTPS'])?'':'s').'://'.$_SERVER['HTTP_HOST'].'/'.ROOT_DIR."/".trim($url,"/");
 	}
+	function action_url($action=""){
+		return $this->root_url($this->controller."/".$action);
+	}
 	function load_model($modelName){
 		$ref = new ReflectionClass($modelName);
 		$modelInstance = $ref->newInstanceArgs([$this->dbContext]);

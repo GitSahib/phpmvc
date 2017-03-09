@@ -37,7 +37,7 @@
 		}
 	});
 	$(".dropdown-toggle").click(function(){
-		$(this).closest("li").toggleClass("open");
+		$(this).closest("li,.dropdown").toggleClass("open");
 	});
 	var validateTicket = function(ticket){	
 		for(var i = 0; i<ticket.length;i++){

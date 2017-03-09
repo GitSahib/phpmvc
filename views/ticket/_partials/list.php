@@ -19,14 +19,19 @@
 					echo "<tr>";
 					foreach ($row as $key_col => $col) {
 						echo "<td>".$col."</td>";
-					}
-					echo "<td>";
-					echo "<a href='".$this->root_url()."/ticket/edit/".$row['id']."' class='btn btn-warning'><i class='glyphicon glyphicon-edit'></i></a>";
-					echo "<a href='".$this->root_url()."/ticket/delete/".$row['id']."' class='btn btn-danger'><i class='glyphicon glyphicon-trash'></i></a>";
-					echo "<a href='".$this->root_url()."/ticket/show/".$row['id']."' class='btn btn-default'><i class='glyphicon glyphicon-eye-open'></i></a>";
-					echo "</td>";
-					echo "</tr>";
-				} ?>				
+					}?>	
+					<td>				
+					 <div class="dropdown">
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">...
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu padding-top-none padding-bottom-none">
+					    <li class="list-group-item list-group-item-warning"><a href='<?php echo $this->action_url("edit/".$row['id']); ?>'><i class='glyphicon glyphicon-edit'></i> Edit</a></li>
+					    <li class="list-group-item list-group-item-danger"><a href='<?php echo $this->action_url("delete/".$row['id']); ?>'><i class='glyphicon glyphicon-trash'></i> Delete</a></li>
+					    <li class="list-group-item list-group-item-info"><a href='<?php echo $this->action_url("show/".$row['id']); ?>'><i class='glyphicon glyphicon-eye-open'></i> View</a></li>
+					  </ul>
+					</div>
+					</td> 
+				<?php } ?>				
 			</tbody>
 		</table>
 	</div>

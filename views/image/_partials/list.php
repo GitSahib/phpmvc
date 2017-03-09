@@ -19,14 +19,18 @@
 					echo "<tr>";
 					foreach ($row as $key_col => $col) {
 						echo "<td>".$col."</td>";
-					}
-					echo "<td>";
-					echo "<a href='".$this->root_url()."/ticket/edit/".$row['id']."' class='btn btn-warning'><i class='glyphicon glyphicon-edit'></i></a>";
-					echo "<a href='".$this->root_url()."/ticket/delete/".$row['id']."' class='btn btn-danger'><i class='glyphicon glyphicon-trash'></i></a>";
-					echo "<a href='".$this->root_url()."/ticket/show/".$row['id']."' class='btn btn-default'><i class='glyphicon glyphicon-eye-open'></i></a>";
-					echo "</td>";
-					echo "</tr>";
-				} ?>				
+					}?>
+					
+					 <div class="dropdown">
+					  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">...
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu">
+					    <li><a href='<?php echo $this->action_url("edit/".$row['id']); ?>' class='btn btn-warning'><i class='glyphicon glyphicon-edit'></i></a></li>
+					    <li><a href='<?php echo $this->action_url("delete/".$row['id']); ?>' class='btn btn-danger'><i class='glyphicon glyphicon-trash'></i></a></li>
+					    <li><a href='<?php echo $this->action_url("show/".$row['id']); ?>' class='btn btn-default'><i class='glyphicon glyphicon-eye-open'></i></a></li>
+					  </ul>
+					</div> 
+				<?php } ?>				
 			</tbody>
 		</table>
 	</div>
