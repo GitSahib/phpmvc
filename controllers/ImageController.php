@@ -48,43 +48,25 @@ class ImageController extends Controller
 		if(!empty($requestType)){
 			unset($_POST['requestType']);
 		}
-		$id = isset($_POST['id'])?$_POST['id']:-1;
-
-		if($id == -1){
-			$upload_result = $this->image_upload
+		$upload_result = $this->image_upload
 				 ->dest_path("uploads")
 				 ->file_name("image")
 				 ->process();
-			echo $upload_result['result'];
-			$res = $upload_result['result'];
-			if( $res > 0 );
-			{
-				$_POST['file_name'] = $upload_result['file_name'];
-				unset($_POST['image']);
-				$this->image_model->insert($_POST);		
-
-			}
-				
+		echo json_encode($upload_result);
+		$id = isset($_POST['id'])?$_POST['id']:-1;
+		if(isset($upload_result['file_name'])){
+			$_POST['file_name'] = $upload_result['file_name'];
 		}
-		else{
-			$upload_result = $this->image_upload
-				 ->dest_path("uploads")
-				 ->file_name("image")
-				 ->process();	
-			
-			$res = $upload_result['result'];
-			echo var_dump($res);
-			if( $res > 0 );
-			{
-				
-				$_POST['file_name'] = $upload_result['file_name'];
-				unset($_POST['image']);
-				$this->image_model->update($id,$_POST);
-			}
-			
+		unset($_POST['image']);
+		if($id == -1){
+			$this->image_model->insert($_POST);				
 		}
-		if($requestType == 'ajax'){
-			echo json_encode(array("STATUS"=>'OK'));
+		else
+		{
+			$this->image_model->update($id,$_POST);
+		}
+		if($requestType == 'ajax')		{
+			//echo json_encode(array("STATUS"=>'OK'));
 			die();
 		}
 		else{
@@ -92,7 +74,7 @@ class ImageController extends Controller
 		}
 	}
 	function produce_error($message=""){
-		echo "Error";
+		echo $message;
 	}
 	function show($id){
 		$this->data['view_object'] = $this->image_model->get($id);

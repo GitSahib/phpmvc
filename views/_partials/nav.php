@@ -17,10 +17,10 @@
         <li class="active">
           <a href="<?php echo $this->root_url();?>/">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li><a href="/UD/cgi-bin/worklist.pl">UD</a></li>
-        <li><a href="/upm2">UPM</a></li>
-        <li><a href="/aqe/cgi-bin/index.pl">AQE</a></li>        
-        <li><a href="/wam">WAM</a></li>
+        <li><a href="#">ABC</a></li>
+        <li><a href="#">ABC</a></li>
+        <li><a href="#">ABC</a></li>        
+        <li><a href="#">ABC</a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -29,10 +29,7 @@
 
           <a href="<?php echo $this->root_url();?>#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Profile<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="https://icode3.web.att.com/cru?filter=inbox">ICODE</a></li>
-            <li><a href="https://itrack.web.att.com/issues/?filter=49937">ITRACK</a></li>
-            <li><a href="https://wiki.web.att.com/pages/viewpage.action?spaceKey=GCSDevOps&title=Git+Process+-+DTI">GIT WIKI</a></li>
-            <li role="separator" class="divider"></li>
+             <li role="separator" class="divider"></li>
             <li class="dropdown-header">----</li>
           </ul>
         </li>

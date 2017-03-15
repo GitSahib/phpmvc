@@ -8,23 +8,23 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">AT&T</a>
+			<a class="navbar-brand" href="#">PHPMVC</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="<?php echo $this->root_url();?>">Home<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-				<li ><a href="/teamdb">TeamDB<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-				<li ><a href="/Templates/cgi-bin/Template.pl">Template Tool<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
-				<li ><a href="/tqi3/cgi-bin/index.pl">TQI<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+				<li ><a href="#">ABC<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+				<li ><a href="#">ABC<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+				<li ><a href="#">ABC<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
 				
-				<li><a href="http://m5devacoe01.gcsc.att.com:23178/shift/">TeamDB_API<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
-				<li ><a href="https://icode3.web.att.com/cru?filter=inbox">ICODE<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
-				<li ><a href="https://itrack.web.att.com/issues/?filter=-1">ITRACK<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
+				<li><a href="#">ABC<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+				<li ><a href="#">ABC<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+				<li ><a href="#">ABC<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-envelope"></span></a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">More.. <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
 					<ul class="dropdown-menu forAnimate" role="menu">
-						<li><a href="https://wiki.web.att.com/pages/viewpage.action?spaceKey=GCSDevOps&title=Git+Process+-+DTI">GIT WIKI</a></li>
+						<li><a href="#">GIT WIKI</a></li>
 						<li><a href="#">Another action</a></li>
 						<li><a href="#">Something else here</a></li>
 						<li class="divider"></li>
